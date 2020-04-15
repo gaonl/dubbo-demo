@@ -1,0 +1,13 @@
+dubbo:
+  application:
+    name:  dubbo-demo-provider
+  registry:
+    address: 125.77.116.145:2182
+    protocol: zookeeper
+    check: false
+  monitor:
+    protocol: register
+  consumer:
+    check:  false
+    timeout: 3000
+
