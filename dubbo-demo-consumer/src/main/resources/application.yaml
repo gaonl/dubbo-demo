@@ -2,14 +2,13 @@ dubbo:
   scan:
     base-packages: net.magicli
   application:
-    name:  dubbo-demo-provider
-  protocol:
-    id: dubbo
-    name: dubbo
-    port: 20880
+    name:  dubbo-demo-consumer
   registry:
     address: 127.0.0.1:2181
     protocol: zookeeper
+  consumer:
+    check:  false
+    timeout: 3000
 
 
 

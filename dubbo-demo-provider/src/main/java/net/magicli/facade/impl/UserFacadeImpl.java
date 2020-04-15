@@ -13,7 +13,7 @@ public class UserFacadeImpl implements UserFacade {
 
         user.setName("name");
         user.setAge(10);
-        user.setId("xxxx-xxxx-xxxx");
+        user.setId(id);
 
         return user;
 
