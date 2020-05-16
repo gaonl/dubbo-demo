@@ -6,6 +6,7 @@ dubbo:
   registry:
     address: 127.0.0.1:2181
     protocol: zookeeper
+    timeout: 20000 #timeout时间配置长一点，不然可能会超时，倒是zk链接不上
   consumer:
     check:  false
     timeout: 3000
