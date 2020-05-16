@@ -36,26 +36,24 @@
                 <version>${dubbo.version}</version>
             </dependency>
 
-            <!-- https://mvnrepository.com/artifact/org.apache.curator/curator-framework -->
             <dependency>
-                <groupId>org.apache.curator</groupId>
-                <artifactId>curator-framework</artifactId>
-                <version>2.12.0</version>
-            </dependency>
-            <!-- https://mvnrepository.com/artifact/org.apache.curator/curator-recipes -->
-            <dependency>
-                <groupId>org.apache.curator</groupId>
-                <artifactId>curator-recipes</artifactId>
-                <version>2.12.0</version>
-            </dependency>
+            <groupId>org.apache.dubbo</groupId>
+            <artifactId>dubbo-spring-boot-starter</artifactId>
+            <version>2.7.6</version>
+        </dependency>
 
-            <!-- https://mvnrepository.com/artifact/com.101tec/zkclient -->
-            <dependency>
-                <groupId>com.101tec</groupId>
-                <artifactId>zkclient</artifactId>
-                <version>0.2</version>
-            </dependency>
-
+        <dependency>
+            <groupId>org.apache.dubbo</groupId>
+            <artifactId>dubbo-dependencies-zookeeper</artifactId>
+            <version>2.7.6</version>
+            <type>pom</type>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-log4j12</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
 
 
 
