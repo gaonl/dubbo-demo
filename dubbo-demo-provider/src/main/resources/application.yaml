@@ -11,7 +11,7 @@ dubbo:
     address: 127.0.0.1:2181
     group: demo-group #服务分组，可以在同一zk集群上注册针对不同环境的服务
     protocol: zookeeper
-    timeout: 20000 #timeout时间配置长一点，不然可能会超时，倒是zk链接不上
+    timeout: 20000 #timeout时间配置长一点，不然可能会超时，导致zk链接不上
 
 
 # dubbo

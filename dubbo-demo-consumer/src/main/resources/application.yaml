@@ -5,11 +5,24 @@ dubbo:
     name:  dubbo-demo-consumer
   registry:
     address: 127.0.0.1:2181
+    group: demo-group
     protocol: zookeeper
-    timeout: 20000 #timeout时间配置长一点，不然可能会超时，倒是zk链接不上
+    timeout: 20000 #timeout时间配置长一点，不然可能会超时，导致zk链接不上
   consumer:
-    check:  false
+    check: false
     timeout: 3000
+  reference:
+    check: false
+
+#    dubbo.scan.base-packages=com.heygood
+#    dubbo.application.name=${spring.dubbo.application.name}
+#    dubbo.registry.address=${spring.dubbo.registry.address}
+#    dubbo.registry.group=${spring.dubbo.registry.group}
+#    dubbo.registry.protocol=zookeeper
+#    dubbo.registry.timeout=20000
+#    dubbo.consumer.check=false
+#    dubbo.reference.check=false
+#    dubbo.consumer.timeout=10000
 
 
 

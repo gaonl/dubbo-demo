@@ -4,7 +4,7 @@ import net.magicli.domain.User;
 import net.magicli.facade.UserFacade;
 import org.apache.dubbo.config.annotation.Service;
 
-@Service
+@Service(interfaceClass = UserFacade.class)
 public class UserFacadeImpl implements UserFacade {
 
     @Override
